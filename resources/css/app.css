@@ -1,0 +1,99 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* dari template layout */
+
+.font-family-karla {
+  font-family: karla;
+}
+
+.bg-primary {
+  background-color: #0A5485 !important;
+}
+
+.bg-hover{
+  background-color: #1a5f8d;
+}
+
+/* ini ngikutin gerakan kursor */
+.nav-item:hover {
+  background: #1a5f8d;
+}
+
+.account-link{ /* header akun di pojok kanan atas */
+  background: #fff;
+  color: #0A5485;
+  border-radius: 0.4rem;
+}
+.account-link:hover { /* header di pojok kanan atas */
+  background: #e5e7eb;
+  color:#1a5f8d;
+  border-radius: 0.4rem;
+}
+
+/* template layout sampe sini */
+
+/* transisi sidebar */
+@layer components {
+  .sidebar {
+    transition: all .4s ease-in-out;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: #F8F9FA;
+}
+
+.text-primary {
+  color: #0A5485 !important;
+}
+
+.header-table {
+  padding-left: 12px; /* px-3 */
+  padding-right: 12px; /* px-3 */
+  padding-top: 12px; /* py-3 */
+  padding-bottom: 12px; /* py-3 */
+  border-bottom: 2px solid #e5e7eb; /* border-b-2 border-gray-200 */
+  background-color: #f3f4f6; /* bg-gray-100 */
+  text-align: center; /* text-center */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  color: #4b5563; /* text-gray-600 */
+  text-transform: uppercase; /* uppercase */
+  letter-spacing: 0.05em; /* tracking-wider */
+  white-space: nowrap; /* whitespace-nowrap */
+}
+
+/* pesan alert-success */
+.alert {
+  transition: opacity 1s ease-out; /* Mengatur transisi opacity */
+  opacity: 1; /* Mula-mula opacity full */
+}
+
+.fade-out {
+  opacity: 0; /* Akhir transisi menjadi transparan */
+  visibility: hidden;
+  transition: visibility 0s 1s, opacity 1s ease-out; /* Menunggu 1s sebelum mengubah visibility */
+}
+
+.inline-container { /* punya nya filter department di schedule*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* @media (max-width: 768px) {
+  .inline-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .inline-container {
+    flex-direction: row;
+  }
+} */
