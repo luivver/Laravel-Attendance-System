@@ -1,6 +1,6 @@
 ## (Simple) Attendance System
 
-Welcome to the Sistem-Absensi-Laravel repository! This project is built using Laravel and serves as a foundational application for managing attendance effectively. It is developed as part of my internship project and is intended for internal use within the company, accessible only by HR and administrators.
+Welcome to the Laravel-Attendance-System repository! This project is built using Laravel and serves as a foundational application for managing attendance effectively. It is developed as part of my internship project and is intended for internal use within the company, accessible only by HR and administrators.
 
 ## Features
 - **User Authentication**: Utilizes Laravel's default authentication system for secure login and registration.
